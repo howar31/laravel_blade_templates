@@ -1,6 +1,10 @@
 <?php
 
 Route::prefix('admin')->group(function () {
-	Route::get('/', 'AdminController@dashboard');
-	Route::get('dashboard', 'AdminController@dashboard');
+	Route::get('/', function () {
+		return view('admin.dashboard');
+	});
+	Route::get('dashboard', function () {
+		return view('admin.dashboard');
+	});
 });
