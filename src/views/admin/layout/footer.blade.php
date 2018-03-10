@@ -1,0 +1,1 @@
+<div id="footer copyright text-right">Copyright © 2018 Howar31. All rights reserved.</div>

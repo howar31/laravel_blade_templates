@@ -1,0 +1,78 @@
+#topbar {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	height: $topbar-height;
+	width: 100%;
+	box-shadow: $box-shadow;
+	background-color: $bg-white;
+	font-weight: bold;
+
+	.logo {
+		position: relative;
+		float: left;
+		height: 100%;
+		width: $sidebar-width;
+		background-color: $bg-dark;
+
+		.btn-toggle-sidebar {
+			position: absolute;
+			left: 0;
+			float: left;
+			top: 0px;
+			z-index: 60;
+			height: $topbar-height;
+			padding: 0 18px;
+			font-size: 16px;
+			background: transparent;
+			color: $text-grey;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $text-white;
+				transition: color 0.3s;
+			}
+		}
+
+		img {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			height: 75%;
+			width: 75%;
+			border: 0;
+			outline: none;
+		}
+
+		transition: width 0.3s;
+
+		.smallscreen & {
+			width: 50px;
+			transition: width 0.3s;
+
+			> img {
+				display: none;
+			}
+		}
+	}
+
+	.navbar {
+		height: 100%;
+
+		.user-menu {
+			font-size: 30px;
+			color: $text;
+			padding: 0 10px;
+		}
+	}
+}
+
+
+@media (max-width:767px) {
+}

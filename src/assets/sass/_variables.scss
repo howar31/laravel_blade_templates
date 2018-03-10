@@ -1,0 +1,29 @@
+// Color
+$monokai-dark:   #272822;
+$monokai-grey:   #75715E;
+$monokai-light:  #D0D0D0;
+$monokai-white:  #F8F8F2;
+$monokai-red:    #F92672;
+$monokai-orange: #FD971F;
+$monokai-yellow: #E6DB74;
+$monokai-green:  #A6E22E;
+$monokai-blue:   #66D9EF;
+$monokai-purple: #AE81FF;
+
+$text: darken($monokai-dark, 10%);
+$text-grey: $monokai-grey;
+$text-light: $monokai-light;
+$text-white: $monokai-white;
+$bg: $monokai-white;
+$bg-black: darken($monokai-dark, 5%);
+$bg-dark: $monokai-dark;
+$bg-grey: $monokai-grey;
+$bg-white: lighten($monokai-white, 3%);
+
+$box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+// Topbar
+$topbar-height: 50px;
+
+// Sidebar
+$sidebar-width: 250px;

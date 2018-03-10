@@ -1,0 +1,19 @@
+#content {
+	position: fixed;
+	top: $topbar-height;
+	padding-left: $sidebar-width;
+	width: 100%;
+	height: calc(100% - #{$topbar-height});
+	overflow: auto;
+	transition: padding 0.3s;
+
+	.smallscreen & {
+		padding-left: 50px;
+	}
+}
+
+@media (max-width:767px) {
+	#content {
+		padding-left: 50px;
+	}
+}

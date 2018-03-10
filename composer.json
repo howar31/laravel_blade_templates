@@ -1,0 +1,17 @@
+{
+    "name": "howar31/blade_templates",
+    "description": "Laravel Blade Templates by Howar31",
+	"license": "proprietary",
+    "authors": [
+        {
+            "name": "Howar31",
+            "email": "howar31@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Howar31\\Blades\\": "src/"
+        }
+    }
+}
