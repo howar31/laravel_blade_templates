@@ -17,7 +17,7 @@
 					<li class="sidebar-item"><a href="javascript:void(0);"><i class="fas fa-user"></i> Typography</a></li>
 				</ul>
 			</li>
-			<li class="sidebar-group expanded">
+			<li class="sidebar-group">
 				<a class="sidebar-group-title" href="javascript:void(0);"><i class="fas fa-users"></i> Forms<span class="pull-right"><i class="fas fa-angle-down"></i></span></a>
 				<ul class="sidebar-group-content">
 					<li class="sidebar-item"><a href="javascript:void(0);"><i class="fas fa-user"></i> Login</a></li>
