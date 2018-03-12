@@ -10,6 +10,7 @@
 	overflow-x: hidden;
 	overflow-y: overlay;
 	transition: width 0.3s;
+	white-space: nowrap;
 
 	#sidebar-wrap {
 		position: absolute;
@@ -38,7 +39,7 @@
 			transition: margin 0.1s;
 		}
 
-		.sidebar-item {
+		li.sidebar-item {
 			transition: background-color 0.3s;
 			transition: color 0.3s;
 
@@ -53,7 +54,7 @@
 				transition: color 0.3s;
 			}
 		}
-		.sidebar-group {
+		li.sidebar-group {
 			a.sidebar-group-title {
 				.fa-angle-down {
 					transition: transform 0.3s;
@@ -94,9 +95,19 @@
 	.smallscreen & {
 		width: 50px;
 
+		li.sidebar-item,
+		li.sidebar-group {
+			width: 50px;
+			white-space: nowrap;
+		}
+
 		li.sidebar-item a,
 		li.sidebar-group a {
 			padding-left: 5px;
+
+			span.group-arrow {
+				display: none;
+			}
 		}
 
 		svg {
