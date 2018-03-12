@@ -20,4 +20,4 @@
 	<h1>This is a TEST17</h1>
 	<h1>This is a TEST18</h1>
 	<h1>This is a TEST19</h1>
-@stop
+@endsection

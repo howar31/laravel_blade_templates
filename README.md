@@ -67,7 +67,7 @@ php artisan vendor:publish --provider="Howar31\Blades\BladesServiceProvider" --t
 php artisan vendor:publish --provider="Howar31\Blades\BladesServiceProvider" --tag=admin --force
 ```
 
-**Please note that `--force` WILL EARSE ALL YOUR EXISTING FILES in the destination.**
+**Please note that `--force` WILL REPLACE ALL YOUR EXISTING FILES at the destination.**
 
 3. The templates are now in `resource\assets`, and routes are in `routes\web.php`, and images are in `public\images`.
 4. Execute `npm run production` to compile the assets. (`npm run dev` for development)
