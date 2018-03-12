@@ -15,8 +15,8 @@ $text-grey: $monokai-grey;
 $text-light: $monokai-light;
 $text-white: $monokai-white;
 $bg: $monokai-white;
-$bg-black: darken($monokai-dark, 5%);
 $bg-dark: $monokai-dark;
+$bg-black: darken($bg-dark, 5%);
 $bg-grey: $monokai-grey;
 $bg-white: lighten($monokai-white, 3%);
 
