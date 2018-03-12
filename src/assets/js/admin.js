@@ -10,13 +10,16 @@ $(document).ready(function() {
 	});
 
 	$('.sidebar-group-title').click(function() {
-		$(this).siblings('ul').slideToggle();
-		$(this).toggleClass('expanded');
+		$(this).siblings('.sidebar-group-content').slideToggle('400', function () {
+			$(this).parent('.sidebar-group').toggleClass('expanded');
+		});
 	});
 
 	// Responsive design
 	checkSize();
 	$(window).resize(checkSize);
+
+	$('.sidebar-item.active').parent('.sidebar-group-content').siblings('.sidebar-group-title').trigger('click');
 });
 
 /**
