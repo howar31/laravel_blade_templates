@@ -52,6 +52,14 @@ php artisan vendor:publish --provider="Howar31\Blades\BladesServiceProvider"
 composer dump-autoload
 ```
 
+6. Update npm
+```bash
+npm install
+```
+
+7. Execute `npm run production` to compile the assets.
+
+
 ## Template Specific Usage
 
 Following instruction includes usage for each type of templates.
