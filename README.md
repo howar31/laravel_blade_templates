@@ -10,7 +10,8 @@ This project was developed under:
 
 * Laravel 5.6.3
 * PHP 7.0 (required by Laravel 5)
-* npm 5.7.1 (Node.js)
+* Node.js 9.8.0
+* npm 5.7.1
 * jQuery 3.3.1 (included)
 * Bootstrap 4.0 (included)
 * Font Awesome 5.0.7 Free SVG (included)
