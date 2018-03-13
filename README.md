@@ -14,6 +14,7 @@ This project was developed under:
 * npm 5.7.1
 * jQuery 3.3.1 (included)
 * Bootstrap 4.0 (included)
+* Popper.js (included in Bootstrap Bundle)
 * Font Awesome 5.0.7 Free SVG (included)
 
 ## General Usage
