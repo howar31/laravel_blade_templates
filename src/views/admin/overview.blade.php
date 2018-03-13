@@ -1,6 +1,6 @@
 @extends('admin.layout', [
-	'current_page' => 'dashboard',
-	'title' => 'Dashboard',
+	'current_page' => 'overview',
+	'title' => 'Overview',
 ])
 
 @section('content')

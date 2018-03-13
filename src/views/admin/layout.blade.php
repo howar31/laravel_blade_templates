@@ -8,7 +8,7 @@
 		<meta name="description" content="Admin Template by Howar31">
 		<meta name="author" content="Howar31">
 
-		<title>Admin Template</title>
+		<title>Admin Template{{ empty($title) ? '' : ' - ' . $title }}</title>
 
 		<!-- Bootstrap 4 -->
 		<link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap/bootstrap.min.css') }}">

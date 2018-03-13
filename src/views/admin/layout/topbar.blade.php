@@ -1,12 +1,12 @@
 <div id="topbar">
 	<div class="logo">
-		<img src="{{ URL::asset('images/logo/samplelogo2_white.svg') }}">
+		<a href="{{ url('/') }}"><img src="{{ URL::asset('images/logo/samplelogo2_white.svg') }}"></a>
 		<button class="btn-toggle-sidebar open-left">
 			<i class="fas fa-bars"></i>
 		</button>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" href="{{ url('/') }}">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
