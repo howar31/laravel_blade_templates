@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('.btn-toggle-sidebar').click(function() {
 		$('body').toggleClass('smallscreen');
 		$('body').addClass('forced');
-		changeSize();
+		changeDisplayMode();
 	});
 
 	$('.sidebar-item').click(function() {
@@ -23,15 +23,23 @@ $(document).ready(function() {
 	});
 
 	// Responsive design
-	changeSize();
-	$(window).resize(changeSize);
+	changeDisplayMode();
+	$(window).resize(changeDisplayMode);
 
 	// Expand sidebar parents if child is active
 	$('.sidebar-item.active').parent('.sidebar-group-content').siblings('.sidebar-group-title').trigger('click');
+
+	$('body').tooltip({
+		selector: '[data-toggle="tooltip"]',
+		container: 'body',
+		boundary: 'viewport',
+		trigger : 'hover',
+		html: true,
+	});
 });
 
 // Check window size and change design for responsive
-function changeSize () {
+function changeDisplayMode () {
 	// Avoid if forced button clicked
 	if (! $('body').hasClass('forced')) {
 		if ($(window).width() > 767) {
@@ -47,23 +55,33 @@ function changeSize () {
 
 // Append tooltips to sidebar items
 function addSidebarTooltips () {
-	$('.sidebar-group > a')
-		.attr('data-toggle', 'tooltip')
-		.attr('data-placement', 'right')
-		.attr('data-html', 'true')
-		.each(function () {
-			$(this).prop('title', $(this).text() + ' <i class="fas fa-angle-down"></i>');
-		});
+	$('.sidebar-group > a').each(function () {
+		$(this).tooltip({
+			container: 'body',
+			boundary: 'viewport',
+			placement: 'right',
+			trigger : 'hover',
+			html: true,
+			title: $(this).text() + ' <i class="fas fa-angle-down"></i>',
+		})
+	});
 
-	$('.sidebar-item > a')
-		.attr('data-toggle', 'tooltip')
-		.attr('data-placement', 'right')
-		.attr('data-html', 'true')
-		.each(function () {
-			$(this).prop('title', $(this).text());
-		});
+	$('.sidebar-item > a').each(function () {
+		$(this).tooltip({
+			container: 'body',
+			boundary: 'viewport',
+			placement: 'right',
+			trigger : 'hover',
+			title: $(this).text(),
+		})
+	});
+
+	$('.sidebar-group > a, .sidebar-item > a').on('show.bs.tooltip', function () {
+		$('.tooltip').not(this).remove();
+	});
 }
 
+// Only show sidebar tooltips in smallscreen mode
 function toggleSidebarTooltips () {
-	$('.sidebar-item > a[data-toggle="tooltip"], .sidebar-group > a[data-toggle="tooltip"]').tooltip($('body').hasClass('smallscreen') ? 'enable' : 'disable');
+	$('.sidebar-item > a, .sidebar-group > a').tooltip($('body').hasClass('smallscreen') ? 'enable' : 'disable');
 }

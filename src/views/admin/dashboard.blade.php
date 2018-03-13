@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('content')
-	<h1>This is a TEST00</h1>
+	<h1 data-toggle="tooltip" data-placement="left" title="test">This is a TEST00</h1>
 	<h1>This is a TEST01</h1>
 	<h1>This is a TEST02</h1>
 	<h1>This is a TEST03</h1>
