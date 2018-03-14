@@ -9,8 +9,8 @@
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: overlay;
-	transition: width 0.3s;
 	white-space: nowrap;
+	transition: width 0.3s;
 
 	#sidebar-wrap {
 		position: absolute;
@@ -26,12 +26,15 @@
 		}
 		a {
 			display: block;
+			width: 100%;
 			color: $text-light;
 			line-height: 50px;
 			padding: 0 10px;
+			transition: color 0.3s, background 0.3s, width 0.3s;
 
 			&:hover {
 				color: $text-white;
+				transition: color 0.3s, background 0.3s, width 0.3s;
 			}
 		}
 		svg {
@@ -40,8 +43,8 @@
 		}
 
 		li.sidebar-item {
-			transition: background-color 0.3s;
-			transition: color 0.3s;
+			display: block;
+			width: 100%;
 
 			&:not(.active) > a:hover {
 				background-color: lighten($bg-dark, 3%);
@@ -50,8 +53,6 @@
 			&.active a {
 				background-color: $bg;
 				color: $text;
-				transition: background-color 0.3s;
-				transition: color 0.3s;
 			}
 		}
 		li.sidebar-group {
@@ -64,7 +65,7 @@
 			li.sidebar-item {
 				background-color: $bg-black;
 
-				&:not(.active) > a.sidebar-group-title:hover {
+				&:not(.active) > a:hover {
 					background-color: lighten($bg-black, 3%);
 				}
 			}
@@ -97,14 +98,11 @@
 
 		li.sidebar-item,
 		li.sidebar-group {
-			width: 50px;
 			white-space: nowrap;
 		}
 
 		li.sidebar-item a,
 		li.sidebar-group a {
-			padding: 0 5px;
-
 			span.group-arrow {
 				display: none;
 			}
