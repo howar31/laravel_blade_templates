@@ -44,7 +44,7 @@
 
 		li.sidebar-item {
 			display: block;
-			width: 100%;
+			width: $sidebar-width;
 
 			&:not(.active) > a:hover {
 				background-color: lighten($bg-dark, 3%);
@@ -98,7 +98,9 @@
 
 		li.sidebar-item,
 		li.sidebar-group {
+			width: 50px !important;
 			white-space: nowrap;
+			transition: width 0.3s;
 		}
 
 		li.sidebar-item a,
