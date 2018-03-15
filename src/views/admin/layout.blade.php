@@ -17,7 +17,8 @@
 	</head>
 	<body>
 		@include('admin.layout.topbar')
-		@include('admin.layout.sidebar')
+		@include('admin.layout.sidebar', ['sidebar' => config('admin.sidebar')])
+
 		<div id="content">
 			<div class="container-fluid">
 				<div class="row">
