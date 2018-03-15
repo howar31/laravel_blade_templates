@@ -37,6 +37,6 @@
 		<script src="{{ URL::asset('/vendor/jquery/jquery.min.js') }}"></script>
 		<script src="{{ URL::asset('/vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
 
-		@yield('body_prepend')
+		@yield('body_append')
 	</body>
 </html>
