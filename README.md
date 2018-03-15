@@ -4,6 +4,8 @@ This project provides several Laravel blade templates for Laravel development, i
 
 * Admin
 
+You can install these templates by using composer (see below), or simply copy the files you need into your project.
+
 ## Requirements
 
 This project was developed under:
@@ -79,7 +81,7 @@ php artisan vendor:publish --provider="Howar31\Blades\BladesServiceProvider" --t
 
 **Please note that `--force` WILL REPLACE ALL YOUR EXISTING FILES at the destination.**
 
-3. The templates are now in `resource\assets`, and routes are in `routes\web.php`, and images are in `public\images`.
+3. The templates are now in `resource\assets`, and routes are in `routes\web.php`, and images are in `public\images`, and configs are in `config`.
 4. Execute `npm run production` to compile the assets. (`npm run dev` for development)
 5. The templates are now ready to use!
 
