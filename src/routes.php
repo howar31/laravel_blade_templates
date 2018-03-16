@@ -22,6 +22,9 @@ Route::prefix('admin')->group(function () {
 		Route::get('button', function () {
 			return view('admin.ui.button');
 		});
+		Route::get('form', function () {
+			return view('admin.ui.form');
+		});
 		Route::get('grid', function () {
 			return view('admin.ui.grid');
 		});
@@ -45,9 +48,9 @@ Route::prefix('admin')->group(function () {
 		});
 	});
 
-	Route::prefix('form')->group(function () {
+	Route::prefix('example')->group(function () {
 		Route::get('login', function () {
-			return view('admin.forms.login');
+			return view('admin.examples.login');
 		});
 	});
 

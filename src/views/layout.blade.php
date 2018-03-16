@@ -13,7 +13,8 @@
 		@yield('head_prepend')
 
 		<!-- Material Design for Bootstrap 4 -->
-		<link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap-material-design/bootstrap-material-design.min.css') }}">
+		{{-- <link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap-material-design/bootstrap-material-design.min.css') }}"> --}}
+		<link rel="stylesheet" href="{{ URL::asset(mix('css/bootstrap-material-design.css')) }}">
 
 		@yield('head_append')
 	</head>

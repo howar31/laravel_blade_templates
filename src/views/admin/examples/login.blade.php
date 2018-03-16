@@ -1,6 +1,6 @@
 @extends('admin.layout', [
 	'current_page' => 'login',
-	'title' => 'Form Login',
+	'title' => 'Examples Login',
 ])
 
 @php

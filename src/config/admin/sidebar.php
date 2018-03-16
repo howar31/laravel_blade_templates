@@ -58,6 +58,13 @@ return [
 				"current_page" => "button"
 			],
 			[
+				"text" => "Forms",
+				"icon" => "fab fa-wpforms",
+				"badge" => "",
+				"url" => "admin/ui/form",
+				"current_page" => "form"
+			],
+			[
 				"text" => "Grids",
 				"icon" => "fas fa-th-large",
 				"badge" => "",
@@ -109,15 +116,15 @@ return [
 		]
 	],
 	[
-		"text" => "Forms",
-		"icon" => "fab fa-wpforms",
+		"text" => "Examples",
+		"icon" => "fas fa-star",
 		"badge" => "",
 		"children" => [
 			[
 				"text" => "Login",
 				"icon" => "fas fa-sign-in-alt",
 				"badge" => "",
-				"url" => "admin/form/login",
+				"url" => "admin/example/login",
 				"current_page" => "login"
 			]
 		]

@@ -11,7 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/assets/sass/admin.scss', 'public/css');
+mix.sass('resources/assets/sass/admin.scss', 'public/css')
+	.sass('resources/assets/sass/bootstrap-material-design/bootstrap-material-design.scss', 'public/css');
 
 mix.js('resources/assets/js/admin.js', 'public/js');
 
