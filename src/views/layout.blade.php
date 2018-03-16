@@ -12,8 +12,8 @@
 
 		@yield('head_prepend')
 
-		<!-- Bootstrap 4 -->
-		<link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap/bootstrap.min.css') }}">
+		<!-- Material Design for Bootstrap 4 -->
+		<link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap-material-design/bootstrap-material-design.min.css') }}">
 
 		@yield('head_append')
 	</head>
@@ -33,10 +33,13 @@
 
 		<!-- FontAwesome -->
 		<script defer src="{{ URL::asset('/vendor/fontawesome/fontawesome-all.min.js') }}"></script>
-		<!-- Bootstrap 4 -->
+		<!-- Material Design for Bootstrap 4 -->
 		<script src="{{ URL::asset('/vendor/jquery/jquery.min.js') }}"></script>
-		<script src="{{ URL::asset('/vendor/bootstrap/bootstrap.bundle.min.js') }}"></script>
+		<script src="{{ URL::asset('/vendor/popper.min.js') }}"></script>
+		<script src="{{ URL::asset('/vendor/bootstrap-material-design/bootstrap-material-design.min.js') }}"></script>
 
 		@yield('body_append')
+
+		<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 	</body>
 </html>
