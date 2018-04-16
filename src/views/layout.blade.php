@@ -13,7 +13,7 @@
 		@yield('head_prepend')
 
 		<!-- Material Design for Bootstrap 4 -->
-		<link rel="stylesheet" href="{{ URL::asset(mix('css/bootstrap-material-design.css')) }}">
+		<link rel="stylesheet" href="{{ asset(mix('css/bootstrap-material-design.css')) }}">
 
 		@yield('head_append')
 	</head>
@@ -32,11 +32,11 @@
 		{{-- @include('admin.layout.footer') --}}
 
 		<!-- FontAwesome -->
-		<script defer src="{{ URL::asset('/vendor/fontawesome/fontawesome-all.min.js') }}"></script>
+		<script defer src="{{ asset('/vendor/fontawesome/fontawesome-all.min.js') }}"></script>
 		<!-- Material Design for Bootstrap 4 -->
-		<script src="{{ URL::asset('/vendor/jquery/jquery.min.js') }}"></script>
-		<script src="{{ URL::asset('/vendor/popper.min.js') }}"></script>
-		<script src="{{ URL::asset('/vendor/bootstrap-material-design/bootstrap-material-design.min.js') }}"></script>
+		<script src="{{ asset('/vendor/jquery/jquery.min.js') }}"></script>
+		<script src="{{ asset('/vendor/popper.min.js') }}"></script>
+		<script src="{{ asset('/vendor/bootstrap-material-design/bootstrap-material-design.min.js') }}"></script>
 
 		@yield('body_append')
 

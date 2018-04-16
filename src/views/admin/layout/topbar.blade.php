@@ -1,6 +1,6 @@
 <div id="topbar">
 	<div class="logo">
-		<a href="{{ url('/') }}"><img src="{{ URL::asset('images/logo/samplelogo2_white.svg') }}"></a>
+		<a href="{{ url('/') }}"><img src="{{ asset('images/logo/samplelogo2_white.svg') }}"></a>
 		<button class="btn-toggle-sidebar open-left">
 			<i class="fas fa-bars"></i>
 		</button>

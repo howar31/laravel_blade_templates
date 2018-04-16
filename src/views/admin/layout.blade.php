@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('head_append')
-	<link rel="stylesheet" href="{{ URL::asset(mix('css/admin.css')) }}">
+	<link rel="stylesheet" href="{{ asset(mix('css/admin.css')) }}">
 @endsection
 
 @section('body_prepend')
@@ -10,5 +10,5 @@
 @endsection
 
 @section('body_append')
-	<script src="{{ URL::asset(mix('js/admin.js')) }}"></script>
+	<script src="{{ asset(mix('js/admin.js')) }}"></script>
 @endsection
