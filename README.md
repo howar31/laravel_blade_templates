@@ -93,9 +93,11 @@ composer update howar31/blades
 
 * Build failed after Laravel-Mix 4.0
 
-Due to change from node-sass to dart-sass in laravel-mix 4.0 release, the bootstrap-material-design scss might build fail while `npm run production` or `npm run development`.  To fall back to node-sass, please edit your webpack.mix.js:
+  Due to change from node-sass to dart-sass in laravel-mix 4.0 release, the bootstrap-material-design scss might build fail while `npm run production` or `npm run development`.  To fall back to node-sass, please edit your webpack.mix.js:
 ```js
 mix.sass('resources/sass/app.sass', 'public/css', {
     implementation: require('node-sass')
 });
 ```
+
+more info: https://laravel-news.com/laravel-mix-4-released
