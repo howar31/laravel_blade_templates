@@ -6,6 +6,10 @@ This project provides several Laravel blade templates for Laravel development, i
 
 You can install these templates by using composer (see below), or simply copy the files you need into your project.
 
+## Demo
+
+http://lab.howar31.com/template/
+
 ## Requirements
 
 This project was developed under:
